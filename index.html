@@ -1,197 +1,122 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chappan Bhog Invitation</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Tiro+Devanagari+Hindi&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chappan Bhog Invitation</title>
 
-        :root {
-            --primary-red: #8B0000;
-            --gold: #D4AF37;
-            --bg-cream: #FFFDF5;
-        }
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-        body {
-            background-color: #f0f0f0;
-            font-family: 'Tiro Devanagari Hindi', serif;
-            display: flex;
-            justify-content: center;
-            padding: 20px;
-        }
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
 
-        /* Main Invitation Container */
-        .invitation-card {
-            background-color: var(--bg-cream);
-            width: 100%;
-            max-width: 600px;
-            border: 15px solid white;
-            outline: 2px solid var(--gold);
-            padding: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            position: relative;
-            text-align: center;
-            color: var(--primary-red);
-        }
-
-        /* Decorative Corners (Reflecting Image 7/8) */
-        .invitation-card::before {
-            content: "✿";
-            position: absolute;
-            top: 10px; left: 10px;
-            font-size: 24px; color: var(--gold);
-        }
-
-        .header-mantra {
-            font-size: 0.9rem;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-
-        .main-title {
-            font-size: 3rem;
-            font-weight: bold;
-            margin: 10px 0;
-            letter-spacing: 2px;
-            border-bottom: 2px solid var(--gold);
-            display: inline-block;
-        }
-
-        .deity-name {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            display: block;
-        }
-
-        .host-section {
-            margin: 20px 0;
-            font-size: 1.1rem;
-        }
-
-        .company-name {
-            font-size: 1.5rem;
-            font-weight: bold;
-            margin: 10px 0;
-        }
-
-        /* Program Box (Matching Reference Layout) */
-        .program-container {
-            border: 2px solid var(--primary-red);
-            border-radius: 10px;
-            margin-top: 30px;
-            padding: 20px;
-            position: relative;
-        }
-
-        .program-label {
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--bg-cream);
-            padding: 0 15px;
-            font-size: 1.4rem;
-            font-weight: bold;
-        }
-
-        .date-badge {
-            border: 1.5px solid var(--primary-red);
-            display: inline-block;
-            padding: 5px 20px;
-            margin: 15px 0 10px;
-            border-radius: 5px;
-            font-weight: bold;
-        }
-
-        .event-detail {
-            display: flex;
-            justify-content: space-between;
-            margin: 5px 0;
-            border-bottom: 1px dotted #ccc;
-        }
-
-        .location-text {
-            font-size: 0.95rem;
-            font-style: italic;
-            margin-bottom: 15px;
-        }
-
-        .footer-vinit {
-            margin-top: 30px;
-            font-size: 1rem;
-        }
-
-        .names-list {
-            font-weight: bold;
-            margin-top: 5px;
-        }
-
-        .note-box {
-            border: 1px solid var(--primary-red);
-            margin-top: 20px;
-            padding: 8px;
-            font-size: 0.9rem;
-        }
-    </style>
+  <style>
+    body {
+      font-family: 'Tiro Devanagari Hindi', serif;
+    }
+  </style>
 </head>
-<body>
 
-    <div class="invitation-card">
-        <div class="header-mantra">
-            ॥ श्री गणेशाय नम: ॥ <br>
-            ॐ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ: । <br>
-            निर्विघ्नं कुरु में देव सर्व कार्येषु सर्वदा ॥
-        </div>
+<body class="bg-gray-100 flex justify-center p-4 sm:p-6">
 
-        <div class="main-title">छप्पन भोग</div>
-        <div class="deity-name">श्री राधा मदनमोहन जी महाराज</div>
+  <!-- Card -->
+  <div class="relative bg-[#FFFDF5] w-full max-w-xl border-[12px] border-white outline outline-2 outline-[#D4AF37]
+              p-5 sm:p-8 text-center text-[#8B0000] shadow-xl">
 
-        <div class="host-section">
-            स्नेहिल स्वजन, <br>
-            श्री राधा मदनमोहन जी महाराज की असीम अनुकम्पा से हमारे यहाँ <br>
-            <div class="company-name">श्री पवन मार्बल्स एण्ड ग्रेनाईट्स कम्पनी</div>
-            ( नानपुर वाले - मैंगलोर ) <br>
-            के द्वारा छप्पन भोग प्रसादी का आयोजन किया जा रहा है।
-        </div>
+    <!-- Decorative corner -->
+    <div class="absolute top-3 left-3 text-[#D4AF37] text-xl">✿</div>
 
-        <div class="program-container">
-            <div class="program-label">कार्यक्रम</div>
-            
-            <div class="date-badge">25 नवम्बर 2025, मंगलवार</div>
-            <div class="event-detail">
-                <span>पोशाक अर्पण</span>
-                <span>समय 2.30 बजे</span>
-            </div>
-            <div class="location-text">भूवारा बाजार - आदिगौड़ ब्राह्मण, समाज मन्दिर</div>
-
-            <div class="date-badge">26 नवम्बर 2025, बुधवार</div>
-            <div class="event-detail">
-                <span>छप्पन भोग दर्शन</span>
-                <span>प्रात: 11.30 से 12.30 बजे</span>
-            </div>
-            <div class="event-detail">
-                <span>प्रसादी ग्रहण</span>
-                <span>दोपहर 1 बजे से आपके आगमन तक</span>
-            </div>
-        </div>
-
-        <p style="margin-top:15px; font-weight:bold;">
-            प्रसादी स्थान: मदनमोहन जी महाराज टेम्पल ट्रस्ट, धर्मशाला, करौली
-        </p>
-
-        <div class="footer-vinit">
-            <em>विनीत:</em>
-            <div class="names-list">
-                रामजीलाल गौड़, लक्ष्मीनारायण गौड़, गिर्राज गौड़, <br>
-                मुकेश गौड़, सुमेर गौड़, रोहित गौड़ (नानपुर वाले)
-            </div>
-        </div>
-
-        <div class="note-box">
-            नोट: कृपया कार्ड को ही व्यक्तिगत बुलावे की मान्यता प्रदान करें।
-        </div>
+    <!-- Mantra -->
+    <div class="text-sm sm:text-base leading-relaxed mb-5">
+      ॥ श्री गणेशाय नम: ॥ <br>
+      ॐ वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ: । <br>
+      निर्विघ्नं कुरु में देव सर्व कार्येषु सर्वदा ॥
     </div>
+
+    <!-- Title -->
+    <h1 class="text-3xl sm:text-4xl font-bold tracking-wide border-b-2 border-[#D4AF37] inline-block mb-2">
+      छप्पन भोग
+    </h1>
+
+    <p class="text-lg sm:text-xl mt-3 mb-5">
+      श्री राधा मदनमोहन जी महाराज
+    </p>
+
+    <!-- Host -->
+    <div class="text-sm sm:text-base leading-relaxed">
+      स्नेहिल स्वजन,<br>
+      श्री राधा मदनमोहन जी महाराज की असीम अनुकम्पा से हमारे यहाँ
+      <div class="font-bold text-lg mt-2">
+        श्री पवन मार्बल्स एण्ड ग्रेनाईट्स कम्पनी
+      </div>
+      (नानपुर वाले - मैंगलोर)<br>
+      के द्वारा छप्पन भोग प्रसादी का आयोजन किया जा रहा है।
+    </div>
+
+    <!-- Program Box -->
+    <div class="relative border-2 border-[#8B0000] rounded-xl mt-8 p-4 sm:p-6">
+
+      <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#FFFDF5]
+                   px-4 text-lg font-bold">
+        कार्यक्रम
+      </span>
+
+      <!-- Day 1 -->
+      <div class="mt-4">
+        <span class="inline-block border border-[#8B0000] px-4 py-1 rounded font-bold text-sm sm:text-base">
+          25 नवम्बर 2025, मंगलवार
+        </span>
+
+        <div class="flex justify-between text-sm sm:text-base mt-3 border-b border-dotted pb-1">
+          <span>पोशाक अर्पण</span>
+          <span>2:30 बजे</span>
+        </div>
+
+        <p class="italic text-xs sm:text-sm mt-2">
+          भूवारा बाजार - आदिगौड़ ब्राह्मण समाज मन्दिर
+        </p>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="mt-6">
+        <span class="inline-block border border-[#8B0000] px-4 py-1 rounded font-bold text-sm sm:text-base">
+          26 नवम्बर 2025, बुधवार
+        </span>
+
+        <div class="flex justify-between text-sm sm:text-base mt-3 border-b border-dotted pb-1">
+          <span>छप्पन भोग दर्शन</span>
+          <span>11:30 – 12:30</span>
+        </div>
+
+        <div class="flex justify-between text-sm sm:text-base mt-2 border-b border-dotted pb-1">
+          <span>प्रसादी ग्रहण</span>
+          <span>1 बजे से</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Venue -->
+    <p class="font-bold text-sm sm:text-base mt-4">
+      प्रसादी स्थान: मदनमोहन जी महाराज टेम्पल ट्रस्ट, धर्मशाला, करौली
+    </p>
+
+    <!-- Footer -->
+    <div class="mt-6 text-sm sm:text-base">
+      <em>विनीत:</em>
+      <p class="font-bold mt-1">
+        रामजीलाल गौड़, लक्ष्मीनारायण गौड़, गिर्राज गौड़,<br>
+        मुकेश गौड़, सुमेर गौड़, रोहित गौड़ (नानपुर वाले)
+      </p>
+    </div>
+
+    <!-- Note -->
+    <div class="border border-[#8B0000] mt-5 p-2 text-xs sm:text-sm">
+      नोट: कृपया कार्ड को ही व्यक्तिगत बुलावे की मान्यता प्रदान करें।
+    </div>
+
+  </div>
 
 </body>
 </html>
